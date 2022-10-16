@@ -15,7 +15,7 @@ function getSeason(date) {
   if (date === undefined) return 'Unable to determine the time of year!';
   if (!(date instanceof Date)) throw new Error('Invalid date!');
   try {
-    let checkDate = JSON.stringify(date);
+    JSON.stringify(date);
   } catch {
     throw new Error('Invalid date!');
   }
